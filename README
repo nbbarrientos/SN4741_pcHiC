@@ -1,10 +1,4 @@
-Content within directories:
-
-mm10_fasta_files -> Fasta files for mm10 downloaded from UCSC
-
-bowtie2_index -> Bowtie2 index files. The bowtie2.sh shell script runs bowtie2
-
-fastq_files -> Promoter Capture HiC (pcHiC) fastq file. Two files per replicate (paired-ends)  
+Content within directories:  
 
 fastQC -> Output files from fastQC analysis
 
