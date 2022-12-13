@@ -1,0 +1,2 @@
+File	Read_pairs_processed	Unique_di-tags	Cis_<10kbp_of_uniques	Cis_>10kbp_of_uniques	Trans_of_uniques
+SN4741_pcHiC_combined_1_2.filt.bam	580864455	221802305	3814502	147531344	70456459

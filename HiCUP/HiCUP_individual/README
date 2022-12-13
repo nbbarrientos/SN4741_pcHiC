@@ -1,0 +1,6 @@
+Directory contains HiCUP output for each sample individually.
+
+deeptools.sh -> Shell script to correlate bam files. Gives outputs: results.npz and results.bed
+
+Command to plot bamfile correlation between samples (Requires deepTools):
+plotCorrelation --corData results.npz --corMethod pearson --whatToPlot heatmap --skipZeros --plotFile correlation6.pdf --plotNumbers --labels 37-1 37-2 37-3 37-4 --zMin 0.8 --colorMap Reds

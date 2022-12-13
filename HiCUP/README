@@ -1,0 +1,22 @@
+This directory contains:
+
+1- The digested reference genome: Digest_mm10_HindIII_None_14-01-03_26-09-2022.txt
+
+2- The following shell scripts:
+	1- hicup_digester.sh -> Runs hicup_digester to generate digested reference genome
+	2- hicup.sh -> Uses the hicup_config.conf file to run HiCUP pipeline
+
+3- The hicup_config.conf file.
+	- hicup_config.conf requires the paths to bowtie2, samtools, and R
+	- Needs path to bowtie2 index
+	- Needs path to digested reference genome
+	- Needs path to fastq files, in pairs
+
+4- The subdirectory HiCUP_individual:
+	- Contains output from HiCUP run with individual fastq files of replicates
+
+5- The hicup_config_combined.conf file.
+	-Same set up as #3 but with paths to combined fastq files
+
+5- The subdirectory HiCUP_combined:
+	- Contains output from HiCUP run with combined fastq files of replicates
