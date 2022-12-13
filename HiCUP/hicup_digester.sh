@@ -1,8 +1,8 @@
 #!/bin/bash -l
 
-fasta_dir="/home/nbarrie1/data-amccall2/work-zfs/NBB/SN4741-pcHiC/mm10_fasta_files"
+fasta_dir="<path to mm10_fasta_files>"
 
-sbatch -A amccall2 \
+sbatch -A <allocation> \
         -p defq \
         -N 1 \
         -n 24 \
@@ -10,5 +10,5 @@ sbatch -A amccall2 \
         -t 10:00:00 \
         -J "Creating digested reference genome" \
         --mail-type=END \
-        --mail-user=nbarrie1@jhu.edu \
+        --mail-user=<email> \
         --wrap="hicup_digester --genome mm10 --re1 A^AGCTT,HindIII ${fasta_dir}/*.fa.gz"
